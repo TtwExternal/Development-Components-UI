@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>HTML5 Tooltips Test</title>
+
+	<link rel="stylesheet" type="text/css" href="./html5tooltips.css" />
+	<link rel="stylesheet" type="text/css" href="./html5tooltips.animation.css" />
+	<script type="text/javascript" src="./html5tooltips.js"></script>
+
+	<style type="text/css">
+
+		body {
+			width: 35em;
+			margin: 0 auto;
+			font-family: Tahoma, Verdana, Arial, sans-serif;
+			height:9999px;
+		}
+
+	</style>
+
+</head><body>
+
+	<h3>Memory Leak Test</h3>
+
+	<div>
+		<button onclick="CreateAll()">Create All Tooltips</button>
+	</div>
+
+
+<script type="text/javascript">
+
+	var x = 10;
+
+	console.log('create input elements start');
+	for (var i = x; i--;) {
+		var el = document.createElement("INPUT");
+		el.id = "test" + i;
+		document.body.appendChild(el);
+
+		document.body.appendChild(document.createElement("BR"));
+	}
+	console.log('create input elements finish');
+
+	function CreateAll() {
+		console.log('create tooltips start');
+		for (var i = x; i--;) {
+			html5tooltips([
+				{
+					contentText: "Short and easy to remember" + i,
+					contentMore: "Should <span style='text-decoration:underline;'>not</span> contain white spaces or special characters",
+					targetSelector: "#test" + i,
+					stickTo: "top",
+					color: "violet",
+					maxWidth: 173
+				}
+			]);
+		}
+		console.log('create tooltips finish');
+
+		console.log(html5tooltips.getAllTooltips());
+	}
+
+	//html5tooltips.refresh();
+
+</script>
+
+</body></html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> CSS Tool Tips </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+/* tooltip */
+.tooltip {
+	position:relative;
+}
+
+.tooltip-input {
+	position:relative;
+	display: table;
+}
+
+/* tooltipbox */
+.tooltipbox {
+	color: #fff;
+	background-color: #D42727;
+	text-shadow: 1px 1px #333;
+	font-size: 14px;
+	visibility: hidden;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	opacity: 0;
+	z-index: 999;
+	padding: 3px 8px;
+	position: absolute;
+	cursor: default;
+	-webkit-transition: all 240ms ease-in-out;
+	-moz-transition: all 240ms ease-in-out;
+	-ms-transition: all 240ms ease-in-out;
+	-o-transition: all 240ms ease-in-out;
+	transition: all 240ms ease-in-out;
+}
+
+.tooltipbox,
+.tooltipbox.top {
+	top: auto;
+	bottom: 114%;
+	left: 50%;
+}
+
+.tooltipbox:after,
+.tooltipbox.top:after {
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	margin-left: -7px;
+	content: ' ';
+	height: 0px;
+	width: 0px;
+	border: 6px solid transparent;
+    border-top-color: #D42727;
+}
+
+/* default width, height, margin */
+.tooltipbox,
+.tooltipbox.top {
+	min-width: 80px;
+	min-height: 22px;
+	margin-left: -43px;
+}
+
+/* tool tip position right */
+.tooltipbox.right {
+	top: 50%;
+	right: auto;
+	left: 106%;
+	margin-top: -15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.tooltipbox.right:after {
+	left: -5px;
+	top: 50%;
+	margin-top: -6px;
+	bottom: auto;
+	border-top-color: transparent;
+    border-right-color: #D42727;
+}
+
+/* tool tip position left */
+.tooltipbox.left {
+	top: 50%;
+	left: auto;
+	right: 105%;
+	margin-top: -15px;
+	margin-left: auto;
+}
+.tooltipbox.left:after {
+	left: auto;
+	right: -12px;
+	top: 50%;
+	margin-top: -6px;
+	bottom: auto;
+	border-top-color: transparent;
+    border-left-color: #D42727;
+}
+
+/* tool tip position bottom */
+.tooltipbox.bottom {
+	top: 115%;
+	bottom: auto;
+	left: 50%;
+	margin-bottom: auto;
+	height: inherit;
+}
+.tooltipbox.bottom:after {
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	margin-left: -7px;
+	content: ' ';
+	height: 0px;
+	width: 0px;
+    border-top-color: transparent;
+    border-bottom-color: #D42727;
+}
+
+/* tooltipbox on focus left and right */
+.tooltip-input .tooltipbox.left,
+.tooltip-input .tooltipbox.right {
+	margin-top: -15px;
+}
+
+/* on hover of element containing tooltipbox default */
+*:not(.tooltip-input):hover > .tooltipbox,
+.tooltip-input input:focus + .tooltipbox {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: all 240ms ease-in-out;
+	-moz-transition: all 240ms ease-in-out;
+	-ms-transition: all 240ms ease-in-out;
+	-o-transition: all 240ms ease-in-out;
+	transition: all 240ms ease-in-out;
+}
+
+/* tool tip slide out */
+*:not(.tooltip-input) > .tooltipbox.slideIn,
+.tooltip-input > .tooltipbox {
+	display: block;
+}
+.tooltip-input > .tooltipbox.slideIn {
+	z-index: -1;
+}
+.tooltip-input > input:focus + .tooltipbox.slideIn {
+	z-index: 1;
+}
+
+/* bottom slideIn */
+*:not(.tooltip-input) > .tooltipbox.slideIn.bottom,
+.tooltip-input > .tooltipbox.slideIn.bottom {
+	top: 50%;
+}
+*:not(.tooltip-input):hover > .tooltipbox.slideIn.bottom,
+.tooltip-input > input:focus + .tooltipbox.slideIn.bottom {
+	top: 115%;
+}
+.tooltip-input > input:focus + .tooltipbox.slideIn.bottom {
+	top: 100%;
+}
+
+/* top slideIn */
+*:not(.tooltip-input) > .tooltipbox.slideIn,
+*:not(.tooltip-input) > .tooltipbox.slideIn.top,
+.tooltip-input > .tooltipbox.slideIn,
+.tooltip-input > .tooltipbox.slideIn.top{
+	bottom: 50%;
+}
+*:not(.tooltip-input):hover > .tooltipbox.slideIn,
+*:not(.tooltip-input):hover > .tooltipbox.slideIn.top,
+.tooltip-input > input:focus + .tooltipbox.slideIn,
+.tooltip-input > input:focus + .tooltipbox.slideIn.top {
+	bottom: 110%;
+}
+
+/* left slideIn */
+*:not(.tooltip-input) > .tooltipbox.slideIn.left,
+.tooltip-input > .tooltipbox.slideIn.left{
+	right: 50%;
+}
+*:not(.tooltip-input):hover > .tooltipbox.slideIn.left,
+.tooltip-input > input:focus + .tooltipbox.slideIn.left {
+	right: 105%;
+}
+
+/* right slideIn */
+*:not(.tooltip-input) > .tooltipbox.slideIn.right,
+.tooltip-input > .tooltipbox.slideIn.right{
+	left: 50%;
+}
+*:not(.tooltip-input):hover > .tooltipbox.slideIn.right,
+.tooltip-input > input:focus + .tooltipbox.slideIn.right {
+	left: 105%;
+}
+</style>
+</head>
+
+<body style="padding:100px 100px 100px 100px;">
+
+	<a href="#" class="tooltip">Tool Tip Left <span class="tooltipbox left">Tool 2342 234213 v4 234 Tip</span></a>
+	&nbsp;
+	<a href="#" class="tooltip">Tool Tip Top slideIn <span class="tooltipbox slideIn top">Tool 2323 42243 4234 Tip</span></a>
+	&nbsp;
+	<a href="#" class="tooltip">Tool Tip Right slideIn <span class="tooltipbox slideIn right">Tool Tip</span></a>
+	&nbsp;
+	<a href="#" class="tooltip">Tool Tip Bottom slideIn <span class="tooltipbox slideIn bottom">Tool 234213 234234 2134234 Tip</span></a>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="tooltip-input">
+		<input type="text" value="" name="try" placeholder="Tooltip right on focus" />
+		<span class="tooltipbox slideIn right">Tool Tip</span>
+	</div>
+
+	<br>
+
+	<div class="tooltip-input">
+		<input type="text" value="" name="try" placeholder="Tooltip Top on focus" />
+		<span class="tooltipbox slideIn top">Tool Tip</span>
+	</div>
+
+	<br>
+
+	<div class="tooltip-input">
+		<input type="text" value="" name="try" placeholder="Tooltip left on focus" />
+		<span class="tooltipbox slideIn left">Tool Tip</span>
+	</div>
+
+	<br>
+
+	<div class="tooltip-input">
+		<input type="text" value="" name="try" placeholder="Tooltip Bottom on focus" />
+		<span class="tooltipbox slideIn bottom">Tool Tip</span>
+	</div>
+
+</body>

@@ -1,0 +1,7 @@
+기본 소스가 AMD의 Block Scope 형태의 소스 실행시 작동 불가 패턴으로 개발되어있음.
+
+소스 마지막 라인에
+
+window.AnyTime = AnyTime;
+
+추가 시켜서 AMD 패턴에서도 정상 구동되게 소스 수정함.

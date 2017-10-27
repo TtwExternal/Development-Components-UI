@@ -1,0 +1,19 @@
+<div id="div-smt_ui-Message-Variations-Error" class="ui negative message"
+	style="width: calc(100% - 300px); max-width: 800px !important;">
+
+
+
+<!--
+-->
+
+
+
+	<!--
+	<include-html>./ui_include--Semantic-UI/common-div-title_bar/ModalPanel.min.html</include-html>
+	-->
+
+	<i class="titleBar-ModalPanel close icon" evt_mclick="evt_mClick_btn_Close"></i>
+	<div class="header"><!=headerText=!></div>
+	<p class="message"><!=messageText=!></p>
+
+</div>

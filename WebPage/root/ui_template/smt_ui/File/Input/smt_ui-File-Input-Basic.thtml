@@ -1,0 +1,18 @@
+<div id="div-smt_ui-File-Input" class="ui segment"
+	style="width: calc(100% - 300px); max-width: 800px !important;">
+
+
+
+<!--
+-->
+
+
+
+	<include-html>./ui_include--Semantic-UI/common-div-title_bar/ModalPanel.min.html</include-html>
+
+	<div class="ui action input">
+		<input class="fileUploader-input" type="file" placeholder="Search...">
+		<button class="fileUploader-button ui button">Upload</button>
+	</div>
+
+</div>

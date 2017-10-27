@@ -1,0 +1,56 @@
+[ add.html ]
+
+<!---- HTML에 data-tooltip 속성으로 설정시 사용 ---->
+
+<p class="label"><span data-tooltip="툴팁 테스트">((p_nm))</span></p>
+<input type="text" class="nm" placeholder="비투링크" data-tooltip="툴팁 테스트" data-tooltip-stickto="top" required></input>
+<input type="text" class="nm_kr" placeholder="Brand Name(KR)" data-tooltip="한국어명을 입력하세요" data-tooltip-stickto="left" data-tooltip-color="bamboo" data-tooltip-animate-function="spin" required></input>
+
+
+<!---- 자바스크립트로 툴팁 설정시 사용 ---->
+
+<input type="text" class="nm_us" placeholder="Brand Name(US)" required></input>
+<input type="text" class="nm_cn" placeholder="Brand Name(CN)" required></input>
+
+
+
+[ add.js ]
+
+//----------------------------------------------------------------------------------------------------;
+
+//	LOGIC;
+
+//----------------------------------------------------------------------------------------------------;
+
+//----------;
+_addEvent();
+_setData_InputValue();
+_setPosition();
+//----------;
+
+//// 자바스크립트로 툴팁 설정시 사용
+html5tooltips([
+    {
+        targetSelector: ".nm_us", // className 일 경우 .nm_us 또는 id 일 경우 #nm_us
+        contentText: "영어명을 입력하세요", // 기본 툴팁 텍스트
+        contentMore: "Should <span style='text-decoration:underline;'>not</span> contain white spaces or special characters", // 클릭시 툴팁이 펼쳐지면서 보여지는 내용
+        stickTo: "top", // 툴팁이 나타나는 위치 (기본값 top으로 사용시 안넣어도됨)
+        color: "violet", // 툴팁 색상 (기본값 #D42727으로 사용시 안넣어도됨)
+        animateFunction: "scalein", // 툴팁 애니메이션 (기본값 fadein으로 사용시 안넣어도됨)
+        maxWidth: 180 // 툴팁 박스 최대가로사이즈 (기본값 없음 안넣으면 무한대)
+    },
+    {
+        targetSelector: ".nm_cn",
+        contentText: "중국어명을 입력하세요",
+        contentMore: "Should <span style='text-decoration:underline;'>not</span> contain white spaces or special characters",
+        stickTo: "top",
+        color: "dream",
+        animateFunction: "spin",
+        maxWidth: 300
+    }
+]);
+
+
+//// HTML 속성으로 사용시 refresh 호출 필수!
+//// Single Page Application 에서는 refresh 함수로 툴팁을 적용해준다.
+html5tooltips.refresh();

@@ -1,0 +1,273 @@
+//----------------------------------------------------------------------------------------------------;
+
+//	Typography;
+
+//----------------------------------------------------------------------------------------------------;
+
+//## Font, line-height, and color for body text, headings, and more.;
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:	   Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:		@font-family-sans-serif;
+
+@font-size-base:		14px;
+@font-size-large:		ceil((@font-size-base * 1.25));//~18px
+@font-size-small:		ceil((@font-size-base * 0.85));//~12px
+
+@font-size-h1:			floor((@font-size-base * 2.6));//~36px
+@font-size-h2:			floor((@font-size-base * 2.15));//~30px
+@font-size-h3:			ceil((@font-size-base * 1.7));//~24px
+@font-size-h4:			ceil((@font-size-base * 1.25));//~18px
+@font-size-h5:			@font-size-base;
+@font-size-h6:			ceil((@font-size-base * 0.85));//~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:		1.428571429;//20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:	floor((@font-size-base * @line-height-base));//~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:	inherit;
+@headings-font-weight:	500;
+@headings-line-height:	1.1;
+@headings-color:		  inherit;
+
+//----------------------------------------------------------------------------------------------------;
+
+//	mixins - border-radius;
+
+//----------------------------------------------------------------------------------------------------;
+
+//Single side border-radius
+
+.border-top-radius(@radius) {
+	border-top-right-radius: @radius;
+	border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+	border-bottom-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+	border-bottom-right-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+	border-bottom-left-radius: @radius;
+	border-top-left-radius: @radius;
+}
+
+
+//----------------------------------------------------------------------------------------------------;
+
+//	mixins - List groups;
+
+//----------------------------------------------------------------------------------------------------;
+
+.list-group-item-variant(@state; @background; @color) {
+	.list-group-item-@{state} {
+		color: @color;
+		background-color: @background;
+
+		a&,
+		button& {
+			color: @color;
+
+			.list-group-item-heading {
+				color: inherit;
+			}
+
+			&:hover,
+			&:focus {
+				color: @color;
+				background-color: darken(@background, 5%);
+			}
+			&.active,
+			&.active:hover,
+			&.active:focus {
+				color: #fff;
+				background-color: @color;
+				border-color: @color;
+			}
+		}
+	}
+}
+
+//----------------------------------------------------------------------------------------------------;
+
+//	FORM;
+
+//----------------------------------------------------------------------------------------------------;
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+//@input-bg:					   #fff;
+//** `<input disabled>` background color
+//@input-bg-disabled:			  @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:					@gray;
+//** `<input>` border color
+@input-border:				   #ccc;
+
+//TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
+//** Default `.form-control` border radius
+//This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+@input-border-radius: @border-radius-base;
+//** Large `.form-control` border radius
+@input-border-radius-large: @border-radius-large;
+//** Small `.form-control` border radius
+@input-border-radius-small: @border-radius-small;
+
+//** Border color for inputs on focus
+@input-border-focus: #66afe9;
+
+//** Placeholder text color
+@input-color-placeholder: #999;
+
+//** Default `.form-control` height
+@input-height-base: (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large: (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small: (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+//** `.form-group` margin
+@form-group-margin-bottom: 15px;
+
+@legend-color: @gray-dark;
+@legend-border-color: #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg: @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+//** Disabled cursor for form controls and buttons.
+@cursor-disabled: not-allowed;
+
+//----------------------------------------------------------------------------------------------------;
+
+//	List groups;
+
+//----------------------------------------------------------------------------------------------------;
+
+//Base class
+//Easily usable on <ul>, <ol>, or <div>.
+.list-group {
+	//No need to set list-style: none; since .list-group-item is block level
+	margin-bottom: 20px;
+	padding-left: 0;//reset padding because ul and ol
+}
+
+
+//Individual list items
+//Use on `li`s or `div`s within the `.list-group` parent.
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	//Place the border on the list items and negative margin up for better styling
+	margin-bottom: -1px;
+	background-color: @list-group-bg;
+	border: 1px solid @list-group-border;
+
+	//Round the first and last items
+	&:first-child {
+		.border-top-radius(@list-group-border-radius);
+	}
+	&:last-child {
+		margin-bottom: 0;
+		.border-bottom-radius(@list-group-border-radius);
+	}
+}
+
+
+//Interactive list items
+//Use anchor or button elements instead of `li`s or `div`s to create interactive items.
+//Includes an extra `.active` modifier class for showing selected items.
+a.list-group-item,
+button.list-group-item {
+	color: @list-group-link-color;
+
+	.list-group-item-heading {
+		color: @list-group-link-heading-color;
+	}
+
+	//Hover state
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: @list-group-link-hover-color;
+		background-color: @list-group-hover-bg;
+	}
+}
+
+button.list-group-item {
+	width: 100%;
+	text-align: left;
+}
+
+.list-group-item {
+	//Disabled state
+	&.disabled,
+	&.disabled:hover,
+	&.disabled:focus {
+		background-color: @list-group-disabled-bg;
+		color: @list-group-disabled-color;
+		cursor: @cursor-disabled;
+
+		//Force color to inherit for custom content
+		.list-group-item-heading {
+			color: inherit;
+		}
+		.list-group-item-text {
+			color: @list-group-disabled-text-color;
+		}
+	}
+
+	//Active class on item itself, not parent
+	&.active,
+	&.active:hover,
+	&.active:focus {
+		z-index: 2;//Place active items above their siblings for proper border styling
+		color: @list-group-active-color;
+		background-color: @list-group-active-bg;
+		border-color: @list-group-active-border;
+
+		//Force color to inherit for custom content
+		.list-group-item-heading,
+		.list-group-item-heading > small,
+		.list-group-item-heading > .small {
+			color: inherit;
+		}
+		.list-group-item-text {
+			color: @list-group-active-text-color;
+		}
+	}
+}
+
+//Contextual variants
+//Add modifier classes to change text and background color on individual items.
+//Organizationally, this must come after the `:hover` states.
+.list-group-item-variant(success; @state-success-bg; @state-success-text);
+.list-group-item-variant(info; @state-info-bg; @state-info-text);
+.list-group-item-variant(warning; @state-warning-bg; @state-warning-text);
+.list-group-item-variant(danger; @state-danger-bg; @state-danger-text);
+
+
+//Custom content options
+//Extra classes for creating well-formatted content within `.list-group-item`s.
+.list-group-item-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.list-group-item-text {
+	margin-bottom: 0;
+	line-height: 1.3;
+}

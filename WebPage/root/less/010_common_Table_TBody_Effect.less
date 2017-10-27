@@ -1,0 +1,54 @@
+/* ---------------------------------------------------------------------------------------------------- */
+
+@bgc_even : #FFF;
+@bgc_odd  : #EEE;
+@bgc_hover: #0FB4C3;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* Tables - TBody */
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+tbody {
+
+	tr {
+		cursor: pointer;
+	}
+
+	tr:nth-child( even ) {
+		background-color: @bgc_even;
+
+		input {
+			background-color: @bgc_even;
+		}
+
+		textarea {
+			background-color: @bgc_even;
+		}
+	}
+
+	tr:nth-child( odd ) {
+		background-color: @bgc_odd;
+
+		input {
+			background-color: @bgc_odd;
+		}
+
+		textarea {
+			background-color: @bgc_odd;
+		}
+	}
+
+	tr:hover {
+		background-color: @bgc_hover;
+
+		input {
+			background-color: @bgc_hover;
+		}
+
+		textarea {
+			background-color: @bgc_hover;
+		}
+	}
+}

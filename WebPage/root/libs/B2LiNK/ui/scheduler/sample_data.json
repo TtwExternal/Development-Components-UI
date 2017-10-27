@@ -1,0 +1,603 @@
+[
+	 {
+		 "id": "BL001",
+		 "date_start": {"y":2017, "m":3, "d":18, "ho":0, "mi":0, "se":0},
+		 "date_end": {"y":2017, "m":3, "d":18, "ho":23, "mi":59, "se":59},
+		 "date_changed": 0,
+		 "completed": 1,
+		 "cd$transaction_entity" : "TRAN-2017-03-18-PB0-1",
+		 "_id$member_public" : 0,
+		 "nm$member_public" : {
+			 "a": "홍길동",
+			 "f": "길동",
+			 "l": "홍"
+		 },
+		 "reference" : {
+			 "no" : 0,
+			 "cd" : "PO-2017-04-08-PS1-1",
+			 "col" : "transaction_purchase_order_purchase_req",
+			 "db" : "transaction_purchase_order_purchase"
+		 },
+		 "info" : {
+			 "_id$partner_supplier" : null,
+			 "nm$partner_supplier" : null,
+			 "_id$partner_buyer" : 0,
+			 "nm$partner_buyer" : "RED",
+			 "_id$trade_terms" : 0,
+			 "nm$trade_terms" : "DDP",
+			 "cd$category_delivery_type" : 1,
+			 "nm$category_delivery_type" : "항공",
+			 "addr_place_of_delivery" : {
+				 "f": "중국 상해시 상해구 상해동 111",
+				 "cd$country": "KR",
+				 "cd_postal": "12345",
+				 "addr1": "상해시",
+				 "addr2": "상해구",
+				 "addr3": "상해동",
+				 "addr4": "111",
+				 "addr5": "",
+				 "addr6": ""
+			 }
+		 },
+		 "type": "release"
+	 },
+	
+	{
+		"id": "BL002",
+		"date_start": {"y":2017, "m":3, "d":20, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":21, "ho":23, "mi":59, "se":59},
+		"date_changed": 0,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-20-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "VIP",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "항공",
+			"addr_place_of_delivery" : {
+				"f": "중국 상해시 상해구 상해동 111",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "상해시",
+				"addr2": "상해구",
+				"addr3": "상해동",
+				"addr4": "111",
+				"addr5": "",
+				"addr6": ""
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL003",
+		"date_start": {"y":2017, "m":3, "d":21, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":21, "ho":23, "mi":59, "se":59},
+		"date_changed": 0,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-21-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "RED",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "항공",
+			"addr_place_of_delivery" : {
+				"f": "중국 상해시 상해구 상해동 111",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "상해시",
+				"addr2": "상해구",
+				"addr3": "상해동",
+				"addr4": "111",
+				"addr5": "",
+				"addr6": ""
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL004",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 0,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "VIP",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "항공",
+			"addr_place_of_delivery" : {
+				"f": "중국 상해시 상해구 상해동 111",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "상해시",
+				"addr2": "상해구",
+				"addr3": "상해동",
+				"addr4": "111",
+				"addr5": "",
+				"addr6": ""
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL005",
+		"date_start": {"y":2017, "m":3, "d":24, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":24, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 0,
+		"cd$transaction_entity" : "TRAN-2017-03-24-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "한성이비지니스",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL006",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 0,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "RED",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "항공",
+			"addr_place_of_delivery" : {
+				"f": "중국 상해시 상해구 상해동 111",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "상해시",
+				"addr2": "상해구",
+				"addr3": "상해동",
+				"addr4": "111",
+				"addr5": "",
+				"addr6": ""
+			}
+		},
+		"type": "departure"
+	},
+	
+	{
+		"id": "BL007",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 0,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "RED",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "항공",
+			"addr_place_of_delivery" : {
+				"f": "중국 상해시 상해구 상해동 111",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "상해시",
+				"addr2": "상해구",
+				"addr3": "상해동",
+				"addr4": "111",
+				"addr5": "",
+				"addr6": ""
+			}
+		},
+		"type": "departure"
+	},
+	
+	{
+		"id": "BL008",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 0,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "한성",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL009",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "한성",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL010",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : null,
+			"nm$partner_supplier" : null,
+			"_id$partner_buyer" : 0,
+			"nm$partner_buyer" : "한성",
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "release"
+	},
+	
+	{
+		"id": "BL011",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : 0,
+			"nm$partner_supplier" : "한성이비지니스",
+			"_id$partner_buyer" : null,
+			"nm$partner_buyer" : null,
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "wearing"
+	},
+	
+	{
+		"id": "BL012",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : 0,
+			"nm$partner_supplier" : "아모레퍼시픽",
+			"_id$partner_buyer" : null,
+			"nm$partner_buyer" : null,
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "wearing"
+	},
+	
+	{
+		"id": "BL013",
+		"date_start": {"y":2017, "m":3, "d":23, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":3, "d":23, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : 0,
+			"nm$partner_supplier" : "LG생활건강",
+			"_id$partner_buyer" : null,
+			"nm$partner_buyer" : null,
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "wearing"
+	},
+
+	{
+		"id": "BL014",
+		"date_start": {"y":2017, "m":4, "d":12, "ho":0, "mi":0, "se":0},
+		"date_end": {"y":2017, "m":4, "d":12, "ho":23, "mi":59, "se":59},
+		"date_changed": 1,
+		"completed": 1,
+		"cd$transaction_entity" : "TRAN-2017-03-23-PB0-1",
+		"_id$member_public" : 0,
+		"nm$member_public" : {
+			"a": "홍길동",
+			"f": "길동",
+			"l": "홍"
+		},
+		"reference" : {
+			"no" : 0,
+			"cd" : "PO-2017-04-08-PS1-1",
+			"col" : "transaction_purchase_order_purchase_req",
+			"db" : "transaction_purchase_order_purchase"
+		},
+		"info" : {
+			"_id$partner_supplier" : 0,
+			"nm$partner_supplier" : "이미인",
+			"_id$partner_buyer" : null,
+			"nm$partner_buyer" : null,
+			"_id$trade_terms" : 0,
+			"nm$trade_terms" : "DDP",
+			"cd$category_delivery_type" : 1,
+			"nm$category_delivery_type" : "국내",
+			"addr_place_of_delivery" : {
+				"f": "대한민국 경기도 고양시 일산동구 일산동 111 222",
+				"cd$country": "KR",
+				"cd_postal": "12345",
+				"addr1": "경기도",
+				"addr2": "고양시",
+				"addr3": "일산동구",
+				"addr4": "일산동",
+				"addr5": "111",
+				"addr6": "222"
+			}
+		},
+		"type": "wearing"
+	}
+]

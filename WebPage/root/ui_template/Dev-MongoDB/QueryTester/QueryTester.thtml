@@ -1,0 +1,70 @@
+<div id="div-Dev-MongoDB-QueryTester">
+
+	<!--
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-aria/resources/theme-aria-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-classic/resources/theme-classic-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-classic-sandbox/resources/theme-classic-sandbox-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-crisp/resources/theme-crisp-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-crisp-touch/resources/theme-crisp-touch-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-gray/resources/theme-gray-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-neptune/resources/theme-neptune-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-neptune-touch/resources/theme-neptune-touch-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="./libs/sencha/extjs/6.2.0/build/classic/theme-triton/resources/theme-triton-all.css" />
+
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-aria/resources/theme-aria-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-classic/resources/theme-classic-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-classic-sandbox/resources/theme-classic-sandbox-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-crisp/resources/theme-crisp-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-crisp-touch/resources/theme-crisp-touch-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-gray/resources/theme-gray-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-neptune/resources/theme-neptune-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-neptune-touch/resources/theme-neptune-touch-all.css" />
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-triton/resources/theme-triton-all.css" />
+	-->
+
+	<LINK rel="stylesheet" type="text/css" href="http://222.239.10.122:49323/libs/sencha/extjs/6.2.0/build/classic/theme-gray/resources/theme-gray-all.css" />
+
+	<div class="div-top">
+		<select class="select-JSONViewType">
+			<option value="0">나름 정렬</option>
+			<option value="1">전체 Tab 정렬</option>
+		</select>
+		<button class="btn-tree_on_off">DB 목록 On/Off</button>
+		<button class="btn-source-change-in_function">소스 (function(){})(); 씌우기</button>
+	</div>
+
+	<div class="div-bottom">
+		<article class="editor-tree-list">
+			<section>
+				<span>&nbsp;</span>
+			</section>
+
+			<section id="tree-dbs_cols" evt_kup="evt_kUp__tree-dbs_cols" evt_mclick="evt_mClick__tree-dbs_cols">
+			</section>
+		</article>
+
+		<article class="editor-left">
+			<section>
+				<span>&nbsp;</span>
+			</section>
+
+			<section id="queryTester_src" evt_kup="evt_kUp__queryTester_src">
+			</section>
+		</article>
+
+		<article class="editor-right">
+			<section>
+				<!--
+				<include-html>./ui_include/common-selector-btn/lt.html</include-html>
+				<include-html>./ui_include/common-selector-btn/gt.html</include-html>
+				-->
+				<span>Total Count : </span>
+				<span class="result-count"></span>
+			</section>
+
+			<section id="queryTester_des">
+			</section>
+		</article>
+	<div>
+
+</div>
